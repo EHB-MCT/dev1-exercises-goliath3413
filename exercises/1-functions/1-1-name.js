@@ -39,9 +39,34 @@ context.stroke()
 //R
 context.strokeStyle = "brown";
 context.beginPath();
-context.moveTo(450, 100);
+context.rect(450, 100, 75, 50);
 context.lineTo(450, 200);
 context.moveTo(450, 100);
-context.arc(450, 100, 0, 450, 150,);
+context.moveTo(525, 150);
+context.lineTo(550, 200)
 context.stroke();
+
+//G
+    context.strokeStyle = 'red';
+    context.beginPath();
+context.moveTo(650, 100);
+context.lineTo(600, 100);
+context.lineTo(600, 200);
+context.lineTo(650, 200);
+context.lineTo(650, 155);
+context.lineTo(625, 155);
+context.stroke();
+
+//E
+context.strokeStyle = "cyan";
+context.beginPath();
+context.moveTo(750, 100);
+context.lineTo(700, 100);
+context.lineTo(700, 200)
+context.lineTo(750, 200)
+context.moveTo(700, 150)
+context.lineTo(750, 150)
+context.stroke();
+
+
 }
