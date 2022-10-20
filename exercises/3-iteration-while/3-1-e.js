@@ -18,8 +18,8 @@ function drawDiagonalGrid() {
         let spacing = 20;
         let x = 50;
         let y = x;
-        Utils.drawLine(50+spacing*i, 210+spacing*i, 210+spacing*i, 50+spacing*i);
-        Utils.drawLine();
+        Utils.drawLine(50+spacing*i, 200+spacing*i, 200+spacing*i, 50+spacing*i);
+        Utils.drawLine((50+spacing)*i, (200+spacing)/i, (200+spacing)*i, (350+spacing)*i);
         i += 1;
     }
 }
