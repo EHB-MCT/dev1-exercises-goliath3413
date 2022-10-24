@@ -17,6 +17,6 @@ function drawMoreConcentricCircles() {
     let i = 10;
     while (i > 0) {
         Utils.strokeCircle(200, 200, );
-        i = ;
+        i += 0;
     }
 }
