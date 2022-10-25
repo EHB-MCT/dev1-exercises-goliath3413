@@ -6,7 +6,7 @@ draw();
 
 function draw() {
     context.lineWidth = 2;
-    context.strokeStyle = "white";
+    context.strokeStyle = "black";
     context.fillStyle = "#3498DB";
     context.fillRect(50, 50, 300, 300);
     drawMoreConcentricCircles();
@@ -14,9 +14,9 @@ function draw() {
 
 function drawMoreConcentricCircles() {
     context.lineWidth = 2;
-    let i = 10;
-    while (i > 0) {
-        Utils.strokeCircle(200, 200, );
-        i += 0;
+    let i = 0;
+    while (i > 6) {
+        Utils.strokeCircle(150, 200, 0);
+        i += 1;
     }
 }

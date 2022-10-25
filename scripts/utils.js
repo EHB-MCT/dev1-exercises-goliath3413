@@ -22,7 +22,7 @@ export function rgb(r,g,b) {
 }
 
 export function strokeCircle(x, y, radius) {
-    strokeEllipse(x,y, radius);
+    strokeEllipse(x, y, radius);
 }
 
 export function fillAndStrokeEllipse(x, y, rX, rY) {
