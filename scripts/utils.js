@@ -22,12 +22,12 @@ export function rgb(r,g,b) {
 }
 
 export function strokeCircle(x, y, radius) {
-    strokeEllipse(x, y, radius);
+    strokeEllipse(x, y, radius, radius);
 }
 
-export function fillAndStrokeEllipse(x, y, rX, rY) {
-    fillEllipse(x,y, rX, rY);
-    strokeEllipse(x, y, rX, rY);
+export function fillAndStrokeEllipse(x, y, radius) {
+    fillEllipse(x,y, radius, radius);
+    strokeEllipse(x, y, radius, radius);
     
 }
 
@@ -42,3 +42,7 @@ context.beginPath();
 context.ellipse(x,y, rX, rY,0, 0, Math.PI*2);
 context.stroke();
 }
+ export function hsla(h, s, l, a) {
+    return "hsla(" + h + "," + s + "%," + l + "%," + a + "(";
+
+ }

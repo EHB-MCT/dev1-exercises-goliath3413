@@ -17,9 +17,7 @@ function drawConcentricPattern() {
     let i = 0;
     while (i <= 10) {
         let size = 10;
-        Utils.strokeCircle(200, 200, size);
-        Utils.strokeCircle(250, 250, size);
-        Utils.strokeCircle(300, 300, size);
+        Utils.strokeCircle(200, 200, size*i);
         i++;
     }
 }
