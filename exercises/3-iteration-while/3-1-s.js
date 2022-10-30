@@ -11,10 +11,12 @@ function draw() {
 
 function drawShrinkingBars() {
     let i = 0;
-    while (i <= 14) {
-        let gray = ;
-        context.fillStyle = Utils.rgb(gray, gray, gray);
-        context.fillRect(, , , );
+    let upspace = 20;
+    let downspace = 40;
+    while (i <= 10) {
+        let gray = 255;
+        context.fillStyle = Utils.rgb(gray-50*i, gray-50*i, gray-50*i);
+        context.fillRect(100+40*i, 100+upspace*i, 15, 400-downspace*i);
         i++;
     }
 }

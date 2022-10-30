@@ -6,7 +6,7 @@ draw();
 
 function draw() {
     context.lineWidth = 2;
-    context.strokeStyle = "black";
+    context.strokeStyle = "white";
     context.fillStyle = "#3498DB";
     context.fillRect(50, 50, 300, 300);
     drawConcentricPattern();
@@ -16,8 +16,10 @@ function drawConcentricPattern() {
     context.lineWidth = 2;
     let i = 0;
     while (i <= 10) {
-        let size = 10;
+        let size = 15;
         Utils.strokeCircle(200, 200, size*i);
+        Utils.strokeCircle(100, 200, size*i);
+        Utils.strokeCircle(300, 200, size*i);
         i++;
     }
 }

@@ -6,7 +6,7 @@ draw();
 
 function draw() {
     context.lineWidth = 2;
-    context.strokeStyle = "black";
+    context.strokeStyle = "white";
     context.fillStyle = "#3498DB";
     context.fillRect(50, 50, 300, 300);
     drawMultipleConcentricCircles();
@@ -16,9 +16,12 @@ function drawMultipleConcentricCircles() {
     context.lineWidth = 2;
     let i = 0;
     while (i <= 10) {
-        let size = i ;
-        Utils.strokeCircle(50, 50, size);
-        Utils.strokeCircle(200, 200, size);
+        let size = 15 ;
+        Utils.strokeCircle(50, 50, size*i);
+        Utils.strokeCircle(350, 50, size*i);
+        Utils.strokeCircle(50, 350, size*i);
+        Utils.strokeCircle(350, 350, size*i)
+        Utils.strokeCircle(200, 200, size*i);
         i++;
     }
 }

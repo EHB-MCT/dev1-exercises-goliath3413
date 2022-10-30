@@ -6,7 +6,7 @@ draw();
 
 function draw() {
     context.lineWidth = 2;
-    context.strokeStyle = "black";
+    context.strokeStyle = "white";
     context.fillStyle = "#3498DB";
     context.fillRect(50, 50, 300, 300);
     drawConcentricCircles();
@@ -18,9 +18,9 @@ function drawConcentricCircles() {
         //This strokeCircle function does not exist yet!
         //Add it to the utils script:
         //The function draws the stroke of a circle 
-        //and has the following parameters: x,y,radius
+        //and has the following parameterss: x,y,radius
         
-        Utils.strokeCircle(50, 50, 30);
+        Utils.strokeCircle(200, 200, 15*i);
         i++;
     }
 }

@@ -5,7 +5,7 @@ import * as Utils from "../../scripts/utils.js";
 draw();
 
 function draw() {
-    context.lineWidth = 2;
+    context.lineWidth = 1;
     context.strokeStyle = "white";
     context.fillStyle = "#3498DB";
     context.fillRect(50, 50, 300, 300);

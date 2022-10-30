@@ -46,3 +46,4 @@ context.stroke();
     return "hsla(" + h + "," + s + "%," + l + "%," + a + "(";
 
  }
+ 
