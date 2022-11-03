@@ -20,6 +20,10 @@ export function rgb(r,g,b) {
     let rgb = "rgb(" + r + "," + g + "," + b + ")"; 
     return rgb;
 }
+export function rgba(r,g,b,a) {
+    let rgb = "rgb(" + r + "," + g + "," + b + ","+ a + ")"; 
+    return rgb;
+}
 
 export function strokeCircle(x, y, radius) {
     strokeEllipse(x, y, radius, radius);
