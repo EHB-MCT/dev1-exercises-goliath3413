@@ -37,9 +37,9 @@ function drawCenterText() {
     context.fillText("ehb", width/2, height/2 -200)
 
     context.textAlign = "center"
-    context.fillStyle = "white";
+    context.fillStyle = "red";
     context.font = "100px Arial";
-    context.fillText("is huh", width/2, height/2 +200)
+    context.fillText("is bruh", width/2, height/2 +200)
 }
 
 function drawMask() {
@@ -49,5 +49,23 @@ function drawMask() {
     context.moveTo(0,0);
     context.lineTo(width/2, 0);
     context.lineTo(0, height/2);
+    context.fill();
+
+    context.beginPath();
+    context.moveTo(width, height);
+    context.lineTo(width/2, height);
+    context.lineTo(width, height/2);
+    context.fill();
+
+    context.beginPath();
+    context.moveTo(0, height);
+    context.lineTo(0, height/2);
+    context.lineTo(width/2, height);
+    context.fill();
+
+    context.beginPath();
+    context.moveTo(width, 0);
+    context.lineTo(width/2, 0);
+    context.lineTo(width, height/2);
     context.fill();
 }
