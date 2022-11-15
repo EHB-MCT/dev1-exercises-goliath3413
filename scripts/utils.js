@@ -12,6 +12,7 @@ import context from "./context.js";
 
 
 export function drawLine(x1, y1, x2, y2) {
+    context.beginPath();
     context.moveTo(x1, y1);
     context.lineTo(x2, y2);
     context.stroke();
@@ -30,9 +31,7 @@ export function strokeCircle(x, y, radius) {
 }
 
 export function fillAndStrokeEllipse(x, y, radius) {
-    fillEllipse(x,y, radius, radius);
-    strokeEllipse(x, y, radius, radius);
-    
+        fillEllipse(x,y, radius, radius);    
 }
 
 function fillEllipse(x, y, rX, rY){
@@ -40,14 +39,27 @@ function fillEllipse(x, y, rX, rY){
     context.ellipse(x,y, rX, rY,0, 0, Math.PI*2);
     context.fill();
 }
+export function hsl(h, s, l) {
+    return "hsl(" + h + "," + s + "%," + l + "%)";
+}
+export function hsla(h, s, l, a) {
+    return "hsl(" + h + "," + s + "%," + l + "%," + a + "%)";
+}
 
 function strokeEllipse(x, y, rX, rY) {
 context.beginPath();
 context.ellipse(x,y, rX, rY,0, 0, Math.PI*2);
 context.stroke();
 }
- export function hsla(h, s, l, a) {
-    return "hsla(" + h + "," + s + "%," + l + "%," + a + "(";
 
+ export function fillCircle(x,y, radius ){
+    context.ellipse
  }
- 
+export function drawRect (x, y, x1, y1) {
+    context.fillRect(x, y, x1, y1);
+    context.fillStyle = "rgb(x, x, x,)"
+}
+
+export function calculateDistance (x1, y1, x2, y2) {
+    return Math.hypot(x2 - x1, y2 - y1);
+}
