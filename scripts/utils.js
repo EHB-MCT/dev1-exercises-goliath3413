@@ -63,3 +63,7 @@ export function drawRect (x, y, x1, y1) {
 export function calculateDistance (x1, y1, x2, y2) {
     return Math.hypot(x2 - x1, y2 - y1);
 }
+
+export function randomNumber(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
