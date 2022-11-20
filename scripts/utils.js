@@ -26,12 +26,18 @@ export function rgba(r,g,b,a) {
     return rgb;
 }
 
-export function strokeCircle(x, y, radius) {
+export function strokeCircle(x, y, radius,) {
     strokeEllipse(x, y, radius, radius);
 }
 
 export function fillAndStrokeEllipse(x, y, radius) {
         fillEllipse(x,y, radius, radius);    
+}
+export function ellipse(x, y, z, b, n, m, ){
+    context.beginPath();
+    context.ellipse(x, y, 0, 0, 0, 0, 0);
+    context.fill();
+    
 }
 
 function fillEllipse(x, y, rX, rY){
