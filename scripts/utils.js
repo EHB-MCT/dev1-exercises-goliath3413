@@ -30,8 +30,8 @@ export function strokeCircle(x, y, radius,) {
     strokeEllipse(x, y, radius, radius);
 }
 
-export function fillAndStrokeEllipse(x, y, radius) {
-    fillEllipse(x, y, radius, radius);
+export function fillAndStrokeEllipse(x, y, radius, radius2) {
+    fillEllipse(x, y, radius, radius2);
 }
 export function ellipse(x, y, z, b, n, m,) {
     context.beginPath();
@@ -51,16 +51,16 @@ export function hsl(h, s, l) {
 export function hsla(h, s, l, a) {
     return "hsl(" + h + "," + s + "%," + l + "%," + a + "%)";
 }
-
+export function fillCircle(x, y, radius) {
+    fillEllipse(x, y, radius, radius);
+}
 function strokeEllipse(x, y, rX, rY) {
     context.beginPath();
     context.ellipse(x, y, rX, rY, 0, 0, Math.PI * 2);
     context.stroke();
 }
 
-export function fillCircle(x, y, radius) {
-    context.ellipse
-}
+
 export function drawRect(x, y, x1, y1) {
     context.fillRect(x, y, x1, y1);
     context.fillStyle = "rgb(x, x, x,)"
